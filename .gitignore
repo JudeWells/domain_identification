@@ -1,0 +1,5 @@
+.idea/
+bert_venv/
+protbert_benchmark/
+proteinbert_models/
+output/
