@@ -4,7 +4,8 @@ ProteinBERT is a protein language model pretrained on ~106M proteins from UniRef
 
 ``pip install -r requirements.txt`` 
 
-You can download the pretrained model & weights from: 'ftp://ftp.cs.huji.ac.il/users/nadavb/protein_bert/epoch_92400_sample_23500000.pkl'
+You can download the pretrained model & weights from: '
+``ftp://ftp.cs.huji.ac.il/users/nadavb/protein_bert/epoch_92400_sample_23500000.pkl``
 
 License
 ProteinBERT is a free open-source project available under the MIT License.
