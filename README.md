@@ -1,5 +1,7 @@
 # domain_identification
 
+Modification of https://github.com/nadavbra/protein_bert for protein domain/non-domain per-residue classification.
+
 ProteinBERT is a protein language model pretrained on ~106M proteins from UniRef90. The pretrained model can be fine-tuned on any protein-related task in a matter of minutes. ProteinBERT achieves state-of-the-art performance on a wide range of benchmarks. ProteinBERT is built on Keras/TensorFlow.
 
 ``pip install -r requirements.txt`` 
