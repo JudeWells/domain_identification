@@ -18,7 +18,8 @@ time the script is called.
 
 DATA_DIR = 'data/'
 FILENAME = 'protbert_domain'
-MODEL_SAVE_DIR = 'proteinbert_models/'
+MODEL_SAVE_DIR = '../protbert/proteinbert_models/'
+PROTBERT_TRAINED_MODEL_FILENAME = 'epoch_92400_sample_23500000.pkl'
 
 # A local (non-global) bianry output
 OUTPUT_TYPE = OutputType(True, 'binary')
@@ -51,7 +52,7 @@ for k,v in hp.items():
 # Loading the pre-trained model and fine-tuning it on the loaded dataset
 
 pretrained_model_generator, input_encoder = load_pretrained_model(local_model_dump_dir=MODEL_SAVE_DIR,
-                                                            local_model_dump_file_name='epoch_92400_sample_23500000.pkl',
+                                                            local_model_dump_file_name=PROTBERT_TRAINED_MODEL_FILENAME,
                                                                   )
 # get_model_with_hidden_layers_as_outputs gives the model output access to the hidden layers (on top of the output)
 model_generator = FinetuningModelGenerator(pretrained_model_generator, OUTPUT_SPEC, pretraining_model_manipulation_function = \
